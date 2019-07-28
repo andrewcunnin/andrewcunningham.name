@@ -1,0 +1,30 @@
+#main-primary-menu li {
+  display: inline-block;
+  width: 100%;
+  height: 2em;
+  font-size: 5em;
+  color: white;
+  text-shadow: $text1 2px 2px;
+}
+#primary-menu li{
+  color: white;
+  font-size: 2.5em;
+  padding: .25em;
+  text-shadow: $text1 2px 2px;
+}
+.menu li a {
+  color: inherit;
+  text-shadow: inherit;
+}
+.menu li:nth-child(4n+1) {
+  background-color: $color2;
+}
+.menu li:nth-child(4n+2) {
+  background-color: $color3;
+}
+.menu li:nth-child(4n+3) {
+  background-color: $color4;
+}
+.menu li:nth-child(4n) {
+  background-color: $color5;
+}

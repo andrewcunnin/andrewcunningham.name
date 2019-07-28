@@ -43,19 +43,20 @@
 			$andrews_theme_description = get_bloginfo( 'description', 'display' );
 			if ( $andrews_theme_description || is_customize_preview() ) :
 				?>
-				<span id="site-description"><p class="site-description"><?php echo $andrews_theme_description; /* WPCS: xss ok. */ ?></p></span>
+				<span id="site-description"><h2 class="site-description"><?php echo $andrews_theme_description; /* WPCS: xss ok. */ ?></h2></span>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'andrews-theme' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+		<?php if(!is_front_page() && !is_home()): ?>
+			<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'andrews-theme' ); ?></button>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+			</nav><!-- #site-navigation -->
+		<?php endif; ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

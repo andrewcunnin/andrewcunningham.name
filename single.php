@@ -12,6 +12,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<h1> SINGLE </h1>
 
 		<?php
 		while ( have_posts() ) :

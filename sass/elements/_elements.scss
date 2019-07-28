@@ -20,6 +20,7 @@ hr {
 }
 
 @import "lists";
+@import "header";
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
@@ -31,3 +32,7 @@ figure {
 }
 
 @import "tables";
+
+.element::-webkit-scrollbar { width: 0 !important }
+.element { overflow: -moz-scrollbars-none; }
+.element { -ms-overflow-style: none; }

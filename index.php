@@ -17,6 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<h1> INDEX </h1>
 
 		<?php
 		if ( have_posts() ) :
@@ -55,5 +56,7 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+if(!is_home() && !is_front_page()):
+	get_sidebar();
+endif;
 get_footer();

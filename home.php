@@ -16,6 +16,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
+		<h1> HOME </h1>
 		<main id="main" class="site-main">
 
 		<?php
@@ -55,5 +56,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
