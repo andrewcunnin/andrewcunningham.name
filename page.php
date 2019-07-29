@@ -17,17 +17,6 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<nav id="site-navigation" class="main-navigation">
-				<?php if(is_front_page() || is_home()): ?>
-				<button class="menu-toggle" aria-controls="main-primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'andrews-theme' ); ?></button>
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'main-primary-menu',
-				) );
-				?>
-			</nav><!-- #site-navigation -->
-		<?php endif; ?>
 		<?php
 		while ( have_posts() ) :
 			the_post();

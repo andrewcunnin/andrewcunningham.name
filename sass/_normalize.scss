@@ -11,6 +11,7 @@
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
+	width: 100%;
 }
 
 /* Sections
@@ -21,7 +22,9 @@ html {
  */
 
 body {
+	width: 100%;
 	margin: 0;
+	overflow-x: scroll;
 }
 
 /**

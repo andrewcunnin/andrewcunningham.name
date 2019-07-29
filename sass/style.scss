@@ -42,23 +42,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-$color1: #ffba30;
-$color2: #ffb17f;
-$color3: #ff8267;
-$color4: #ff3937;
-$color5: #fff637;
-$text1: #4afaff;
 
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
-@import "fonts/fonts";
 
-h1, h2, h3, h4, h5, h6, .site-title a {
-  font-family: Poiret;
-}
-p, a {
-  font-family: Roboto;
-}
 
 /*--------------------------------------------------------------
 # Normalize
@@ -104,7 +91,7 @@ p, a {
 # Widgets
 --------------------------------------------------------------*/
 @import "site/secondary/widgets";
-
+@import "layout/no-sidebar";
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
