@@ -51,6 +51,14 @@ $text1: #4afaff;
 
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
+@import "fonts/fonts";
+
+h1, h2, h3, h4, h5, h6, .site-title a {
+  font-family: Poiret;
+}
+p, a {
+  font-family: Roboto;
+}
 
 /*--------------------------------------------------------------
 # Normalize
