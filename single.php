@@ -12,7 +12,6 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<h1> SINGLE </h1>
 
 		<?php
 		while ( have_posts() ) :
@@ -23,9 +22,9 @@ get_header();
 			the_post_navigation();
 
 			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
+			/*if ( comments_open() || get_comments_number() ) :
 				comments_template();
-			endif;
+			endif;*/
 
 		endwhile; // End of the loop.
 		?>

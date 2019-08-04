@@ -1,12 +1,20 @@
 .sticky {
 	display: block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .post,
 .page {
 	margin: 0 0 1.5em;
 }
-article{
+
+.entry-title, .page-title{
+	font-size: 3em;
+}
+
+.entry-content, .page-content{
 	padding-left: 5em;
 	padding-right: 5em;
 }
@@ -18,9 +26,74 @@ article{
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+	z-index: 5;
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.site-title, .site-description {
+	margin-top: 0;
+	margin-bottom: 0.1em;
+}
+
+.filter{
+	height: 100%;
+	left: 0;
+	right: 0;
+	opacity: 0.8;
+	position: absolute;
+	z-index: 0;
+}
+
+.display-content{
+	opacity: 1;
+	z-index: 1;
+	position: relative;
+}
+
+.sticky {
+	.entry-meta {
+		display: none;
+	}
+	.entry-content{
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-bottom: 1em;
+		margin-top: 0;
+	}
+	header {
+		text-align: left;
+	}
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	p{
+		font-size: 1.5em;
+		margin: 0;
+	}
+	h2{
+		margin: 0;
+	}
+	color: white;
+	width: 100%;
+	position: relative;
+	margin: 0;
+}
+
+body.home .content-area{
+	width: 100%;
+}
+
+body.home .site-main article:nth-child(3n) .filter {
+	background-color: $color2;
+}
+body.home .site-main article:nth-child(3n+1) .filter {
+	background-color: $color3;
+}
+body.home .site-main article:nth-child(3n+2) .filter {
+	background-color: $color4;
 }

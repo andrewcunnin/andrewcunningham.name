@@ -23,7 +23,6 @@
 			<div class="entry-meta">
 				<?php
 				andrews_theme_posted_on();
-				andrews_theme_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>

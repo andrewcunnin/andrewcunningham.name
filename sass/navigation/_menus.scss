@@ -1,4 +1,4 @@
-.main-navigation {
+.menu {
 	clear: both;
 	display: block;
 	float: left;
@@ -13,12 +13,14 @@
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
+			list-style: none;
 			position: absolute;
 			top: 100%;
 			left: -999em;
 			z-index: 99999;
 
 			ul {
+				list-style: none;
 				left: -999em;
 				top: 0;
 			}
@@ -32,6 +34,7 @@
 
 			a {
 				width: 200px;
+				text-decoration: none;
 			}
 
 			:hover > a,
@@ -52,6 +55,7 @@
 	li {
 		float: left;
 		position: relative;
+		margin-right: 1em;
 
 		&:hover > a,
 		&.focus > a {
@@ -75,6 +79,13 @@
 .main-navigation.toggled ul {
 	display: block;
 }
+
+.menu{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {

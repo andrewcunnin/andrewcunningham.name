@@ -72,14 +72,14 @@ if ( ! function_exists( 'andrews_theme_entry_footer' ) ) :
 				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'andrews-theme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
-
+		/*
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'andrews-theme' ),
+					/*	__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'andrews-theme' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -90,7 +90,7 @@ if ( ! function_exists( 'andrews_theme_entry_footer' ) ) :
 				)
 			);
 			echo '</span>';
-		}
+		}*/
 
 		edit_post_link(
 			sprintf(

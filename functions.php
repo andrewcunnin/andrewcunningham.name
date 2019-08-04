@@ -65,6 +65,26 @@ if ( ! function_exists( 'andrews_theme_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
+		add_filter( 'get_the_archive_title', function ($title) {
+
+    if ( is_category() ) {
+
+            $title = single_cat_title( '', false );
+
+        } elseif ( is_tag() ) {
+
+            $title = single_tag_title( '', false );
+
+        } elseif ( is_author() ) {
+
+            $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+
+        }
+
+    return $title;
+
+});
+
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -164,4 +184,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+}
+
+add_action( 'parse_query', 'enfold_customization_homepage_sticky_posts' );
+function enfold_customization_homepage_sticky_posts( $query ){
+	if ( is_home() ) {
+		$sticky = get_option( 'sticky_posts' );
+		set_query_var( 'post__in', $sticky );
+	}
 }

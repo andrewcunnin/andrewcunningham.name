@@ -29,17 +29,9 @@
 			<?php
 			if ( has_custom_logo() ) :
 				the_custom_logo();
-			else:
-				if ( is_front_page() && is_home() ) :
-					?>
+			else: ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php
-				else :
-					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php
-				endif;
-			endif;
+			<?php endif;
 			$andrews_theme_description = get_bloginfo( 'description', 'display' );
 			if ( $andrews_theme_description || is_customize_preview() ) :
 				?>
@@ -47,27 +39,14 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-
-		<?php if(is_front_page() || is_home()): ?>
-			</header><!-- #masthead -->
-			<nav id="site-navigation" class="main-navigation">
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'main-primary-menu',
-				) );
-				?>
-			</nav><!-- #site-navigation -->
-		<?php else: ?>
-			<nav id="site-navigation" class="main-navigation">
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-				?>
-			</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
-		<?php endif; ?>
+		<nav id="site-navigation">
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+			?>
+		</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
