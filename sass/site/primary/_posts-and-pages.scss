@@ -7,7 +7,7 @@
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0 0 0.5em;
 }
 
 .entry-title, .page-title{
@@ -68,7 +68,7 @@
 		text-align: left;
 	}
 	a{
-		color: white;
+		color: $text1;
 		text-decoration: none;
 	}
 	p{
@@ -78,7 +78,7 @@
 	h2{
 		margin: 0;
 	}
-	color: white;
+	color: $text1;
 	width: 100%;
 	position: relative;
 	margin: 0;
@@ -96,4 +96,8 @@ body.home .site-main article:nth-child(3n+1) .filter {
 }
 body.home .site-main article:nth-child(3n+2) .filter {
 	background-color: $color4;
+}
+
+.edit-link {
+	margin-left: 2em;
 }

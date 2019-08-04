@@ -32,3 +32,13 @@
   url("fonts/roboto/Roboto-Regular.woff") format('woff'),
   url("fonts/roboto/Roboto-Regular.woff2") format('woff2');
 }
+
+@font-face {
+  font-family: joystick;
+  src: url("fonts/joystick/Joystick.otf") format('opentype'),
+}
+
+@font-face {
+  font-family: OneMoreLight;
+  src: url("fonts/OneMoreLight/KGOneMoreLight.ttf") format('truetype'),
+}

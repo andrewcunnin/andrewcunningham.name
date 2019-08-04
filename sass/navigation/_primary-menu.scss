@@ -4,30 +4,28 @@
   min-height: 2em;
   height: auto;
   font-size: 5em;
-  color: white;
+  color: $text1;
   text-align: center;
-  text-shadow: $text1 2px 2px;
+  text-shadow: $text2 2px 2px;
 }
 #primary-menu li{
-  color: white;
+  color: $text1;
   font-size: 2.5em;
   padding: .25em;
-  text-shadow: $text1 2px 2px;
+  margin-bottom: 0.5em;
+  text-shadow: $text2 2px 2px;
 }
 .menu li a {
-  font-family: Neon;
+  font-size: 1.2em;
   color: inherit;
   text-shadow: inherit;
 }
-.menu li:nth-child(4n+1) {
+.menu li:nth-child(3n) {
   background-color: $color2;
 }
-.menu li:nth-child(4n+2) {
+.menu li:nth-child(3n+1) {
   background-color: $color3;
 }
-.menu li:nth-child(4n+3) {
+.menu li:nth-child(3n+2) {
   background-color: $color4;
-}
-.menu li:nth-child(4n) {
-  background-color: $color5;
 }

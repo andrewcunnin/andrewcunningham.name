@@ -1,17 +1,29 @@
 #masthead{
   background-color: $color1;
-  color: white;
+  color: $text1;
 }
 header{
-  text-align: center;
   font-size: 1em;
-  padding: 1em;
+  padding: 0.5em;
 }
 .site-title{
   font-size: 5em;
   margin-top: .5em;
   margin-bottom: .5em;
 }
+.site-branding {
+  margin-bottom: 1em;
+}
+.page-title{
+  text-align: center;
+  font-size: 1.5em;
+}
 .site-title a {
   text-decoration: none;
+}
+.page .entry-title {
+  text-align: center;
+}
+#site-description {
+  text-align: center;
 }
